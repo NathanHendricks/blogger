@@ -9,6 +9,12 @@ class BlogsService {
     logger.log('getblogs', res)
     AppState.blogs = res.data.map(b => new Blog(b))
   }
+
+  async getBlog(id) {
+    const res = await api.get('api/blogs/' + id)
+    logger.log('getblog', res)
+    AppState.blog = new Blog(res.data)
+  }
 }
 
 export const blogsService = new BlogsService()

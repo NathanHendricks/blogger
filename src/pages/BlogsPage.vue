@@ -1,9 +1,7 @@
 <template>
   <div class="blog container-fluid">
     <div class="row">
-      <div class="col-md-3">
-        <BlogCard v-for="b in blogs" :key="b.id" :blog="b" />
-      </div>
+      <BlogCard v-for="b in blogs" :key="b.id" :blog="b" />
     </div>
   </div>
 </template>

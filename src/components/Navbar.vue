@@ -27,6 +27,11 @@
             Blogs
           </router-link>
         </li>
+        <li>
+          <a class="btn text-success lighten-30 selectable text-uppercase">
+            Make Post
+          </a>
+        </li>
       </ul>
       <span class="navbar-text">
         <button
