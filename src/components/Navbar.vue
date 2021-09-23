@@ -28,9 +28,9 @@
           </router-link>
         </li>
         <li>
-          <a class="btn text-success lighten-30 selectable text-uppercase">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#make-post" class="btn text-success lighten-30 selectable text-uppercase">
             Make Post
-          </a>
+          </button>
         </li>
       </ul>
       <span class="navbar-text">

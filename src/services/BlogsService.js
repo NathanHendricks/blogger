@@ -15,6 +15,17 @@ class BlogsService {
     logger.log('getblog', res)
     AppState.blog = new Blog(res.data)
   }
+
+  async createPost(data) {
+    const res = await api.post('api/blogs/', data)
+    AppState.blogs.unshift(new Blog(res.data))
+  }
+
+  async deleteBlog(blogId) {
+    const res = await api.delete('api/blogs/' + blogId)
+    logger.log('the delete', res)
+    AppState.blogs = AppState.blogs.filter(b => b.id !== blogId)
+  }
 }
 
 export const blogsService = new BlogsService()

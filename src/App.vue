@@ -10,6 +10,14 @@
       Made with 💖 by CodeWorks
     </div>
   </footer>
+  <Modal id="make-post">
+    <template #modal-title>
+      <h2>MAKETH THE DAMN FORM</h2>
+    </template>
+    <template #modal-body>
+      <BlogForm />
+    </template>
+  </Modal>
 </template>
 
 <script>

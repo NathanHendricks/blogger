@@ -28,10 +28,10 @@ export default {
 
 <style scoped lang='scss'>
 .posty {
-    height: 85vh;
+    height: 80vh;
 }
 .post-img {
-    height: 40vh;
+    height: 30vh;
 }
 
 </style>
